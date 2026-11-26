@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Lulu Agent 隐私政策</title>
+  <title>Lulu Agent</title>
   <style>
     :root {
       color-scheme: light dark;
@@ -11,136 +11,57 @@
       --muted: #555;
       --line: #ddd;
       --bg: #fff;
+      --accent: #2a2a2a;
     }
     @media (prefers-color-scheme: dark) {
-      :root { --ink: #f2f2f2; --muted: #aaa; --line: #333; --bg: #111; }
+      :root { --ink: #f2f2f2; --muted: #aaa; --line: #333; --bg: #111; --accent: #eee; }
     }
     body {
       margin: 0;
       background: var(--bg);
       color: var(--ink);
-      font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      font: 16px/1.75 -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
     }
-    main {
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 40px 20px 80px;
-    }
-    h1 { font-size: 1.75rem; line-height: 1.3; margin: 0 0 12px; }
-    h2 { font-size: 1.15rem; margin: 2rem 0 0.75rem; }
-    p, li { color: var(--ink); }
-    .meta, .note { color: var(--muted); font-size: 0.95rem; }
-    .meta { margin-bottom: 1.5rem; }
-    .note {
-      border-top: 1px solid var(--line);
-      margin-top: 2.5rem;
-      padding-top: 1rem;
-    }
+    main { max-width: 640px; margin: 0 auto; padding: 56px 20px 80px; }
+    h1 { font-size: 2rem; margin: 0 0 12px; letter-spacing: -0.02em; }
+    .tag { color: var(--muted); margin: 0 0 1.5rem; }
+    p { margin: 0 0 1rem; }
     ul { padding-left: 1.2rem; }
-    a { color: inherit; }
-    nav { margin: 0 0 1.5rem; font-size: 0.95rem; }
-    nav a { margin-right: 1rem; }
+    a { color: var(--accent); }
+    nav { margin: 2rem 0 0; font-size: 0.95rem; }
+    nav a { margin-right: 1.2rem; }
+    .cta {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 10px 16px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      text-decoration: none;
+    }
   </style>
 </head>
 <body>
   <main>
+    <h1>Lulu Agent</h1>
+    <p class="tag">把 Apple Watch 变成全天候 AI 助手，让 Lulu 读懂你的每一天</p>
+
+    <p>Lulu Agent 基于 Apple Watch 与 iPhone，帮助你随时记录会议、沟通与灵感；本地语音转文字，支持回看回听，并结合 AI 整理会议纪要、完善灵感思路，逐步建立属于你的个人上下文。</p>
+
+    <ul>
+      <li>手表 / 手机全天候语音记录</li>
+      <li>本地多模型转写与说话人区分</li>
+      <li>会议纪要、灵感整理等 Skill</li>
+      <li>可配置大模型与长期记忆</li>
+    </ul>
+
+    <p>
+      <a class="cta" href="./support.html">技术支持</a>
+      <a class="cta" href="./privacy.html">隐私政策</a>
+    </p>
+
     <nav>
-      <a href="#zh">中文</a>
-      <a href="#en">English</a>
+      <span class="tag">开发者：罗永凯 · <a href="mailto:2487506634@qq.com">2487506634@qq.com</a></span>
     </nav>
-
-    <section id="zh">
-      <h1>Lulu Agent 隐私政策</h1>
-      <p class="meta">
-        生效日期：2026-11-24<br />
-        个人信息处理者：上海万物归元生命科技有限公司<br />
-        隐私联系邮箱：<a href="mailto:privacy@wanwuguiyuan.com">privacy@wanwuguiyuan.com</a>
-        （请替换为你的真实邮箱）
-      </p>
-
-      <h2>1. 适用范围</h2>
-      <p>本政策适用于 Lulu Agent 的 iPhone、Apple Watch 与配套 Mac 应用（或 Mac 上运行的个人 Agent 服务）。产品用于生活录音与回看、本地转写，以及在你授权与配置后，通过个人 Agent（Lulu）进行对话与协助。</p>
-
-      <h2>2. 我们如何处理信息</h2>
-      <ul>
-        <li><strong>录音与传输：</strong>在你开始录音后，手表或手机采集声音，并在你的设备间同步（例如 Watch 到 iPhone）。传输可能延后，不保证实时完成。</li>
-        <li><strong>本地转写：</strong>手机可使用随应用提供的语音识别模型在本机转写。该转写路径不依赖开发者运营的云端语音转写服务。</li>
-        <li><strong>聊天与记忆：</strong>聊天内容、设置与相关记忆主要保存在你的设备或你配对的 Mac 个人 Agent 运行环境中。</li>
-        <li><strong>可选系统资料：</strong>在你开启后，可能读取健康（如步数、心率）、日历、提醒、位置等到访信息等，用于同步到配对的 Mac，以便 Agent 在你提问时提供更相关的帮助。你可以随时在系统设置或应用内关闭。</li>
-        <li><strong>连接配置：</strong>应用可能保存配对、同步状态、网络连接配置等信息，用于维持手机与 Mac 的安全连接。这些标识用于应用运行，不是广告标识。</li>
-      </ul>
-      <p>当前产品不以广告追踪为目的收集数据，也不以开发者自有账号体系强制注册作为使用录音与回看的前提。</p>
-
-      <h2>3. 大模型与对外发送</h2>
-      <p>个人 Agent 使用的大模型服务由你（或你的组织）自行配置，密钥保存在你控制的设备／运行环境中。开发者<strong>不会</strong>在应用内预置可用的通用大模型 API Key。</p>
-      <p>当你发起需要模型能力的对话或任务时，相关内容可能发送给你配置的模型服务，例如：</p>
-      <ul>
-        <li>你输入的消息、相关对话历史与工具调用结果；</li>
-        <li>你授权同步的转录片段、记忆或可选系统资料摘要；</li>
-        <li>完成请求所需的技术信息（如时间、来源标识）。</li>
-      </ul>
-      <p>原始录音默认不会仅因本地转写而自动上传给模型服务。模型服务商如何存储、训练或跨境处理数据，以其自身隐私政策为准；请仅配置你信任的服务。</p>
-
-      <h2>4. 权限说明</h2>
-      <ul>
-        <li>麦克风：录音与语音输入；</li>
-        <li>健康 / 日历 / 提醒 / 位置等：仅在你开启相应功能后按说明使用；</li>
-        <li>本地网络 / 相机等：用于配对、附近通信或添加聊天附件等场景。</li>
-      </ul>
-      <p>你可以在系统设置中撤销权限。录制他人声音前，请依法取得必要同意。</p>
-
-      <h2>5. 保存、删除与安全</h2>
-      <p>录音原音可能设有自动保留期限（可在设置中调整）；转录文字通常可继续保留直至你删除。你可以在应用内删除录音、转录或相关内容。本地删除无法撤回已发送给第三方模型服务或已导出／分享的副本。</p>
-      <p>我们采取系统沙盒、传输加密（如 HTTPS／配对通道）及钥匙串等常见保护措施，但不承诺绝对安全。请妥善保护设备、备份与导出文件。</p>
-
-      <h2>6. 未成年人</h2>
-      <p>本产品主要面向成年人。若你是未成年人，请在监护人指导下使用，并在监护人同意下处理相关个人信息。</p>
-
-      <h2>7. 联系与更新</h2>
-      <p>如需访问、更正、删除个人信息，或对本政策有疑问，请联系上述隐私邮箱。请勿在首次邮件中发送完整 API Key 或不必要的录音原文。</p>
-      <p>若处理方式发生重要变化，我们将更新本页面；依法需要另行征得同意的，将按要求告知并取得同意。</p>
-    </section>
-
-    <section id="en" style="margin-top:4rem">
-      <h1>Lulu Agent Privacy Policy</h1>
-      <p class="meta">
-        Effective date: 2026-11-24<br />
-        Controller: Shanghai Wanwu Guiyuan Life Technology Co., Ltd.<br />
-        Privacy contact: <a href="mailto:privacy@wanwuguiyuan.com">privacy@wanwuguiyuan.com</a>
-        (replace with your real address)
-      </p>
-
-      <h2>1. Scope</h2>
-      <p>This policy covers the Lulu Agent iPhone, Apple Watch, and companion Mac app / personal-agent runtime. The product supports life recording and review, on-device transcription, and—after your configuration and authorization—conversations with your personal agent (Lulu).</p>
-
-      <h2>2. Information we process</h2>
-      <ul>
-        <li><strong>Recordings:</strong> After you start recording, Watch or iPhone captures audio and syncs between your devices (for example Watch → iPhone). Transfer may be delayed.</li>
-        <li><strong>On-device transcription:</strong> The phone may transcribe audio locally with bundled speech models. This path does not use a developer-operated cloud transcription service.</li>
-        <li><strong>Chats and memory:</strong> Conversations, settings, and related memory are stored primarily on your devices or your paired Mac agent environment.</li>
-        <li><strong>Optional system data:</strong> If you enable them, health (for example steps or heart rate), calendar, reminders, or visit/location context may sync to your paired Mac to help the agent answer relevant questions. You can turn these off at any time.</li>
-        <li><strong>Connection configuration:</strong> Pairing state, sync status, and network configuration may be stored to keep phone–Mac communication working. These are operational identifiers, not advertising IDs.</li>
-      </ul>
-      <p>The product is not designed for advertising tracking, and local recording/review does not require a developer-operated account.</p>
-
-      <h2>3. Model providers and outbound data</h2>
-      <p>Large-language-model services are configured by you (or your organization). Keys remain under your control. The developer does <strong>not</strong> ship a general-purpose model API key inside the app.</p>
-      <p>When you start a conversation or task that needs a model, content may be sent to the provider you configured, including messages, related history, authorized transcript excerpts or memory, and technical context needed for the request. Original audio is not automatically uploaded to a model solely because of local transcription. Provider retention, training, and cross-border processing follow that provider’s policy.</p>
-
-      <h2>4. Permissions</h2>
-      <p>Microphone is used for recording and voice input. Health, calendar, reminders, location, local network, camera, and similar permissions are used only for the features you enable. Revoke permissions in system settings. Obtain appropriate consent before recording others.</p>
-
-      <h2>5. Retention, deletion, and security</h2>
-      <p>Original audio may have a retention period you can adjust; transcripts generally remain until you delete them. Local deletion cannot retract data already sent to a model provider or exported elsewhere. We use platform sandboxing, encrypted transport where applicable, and Keychain storage, but we do not promise absolute security.</p>
-
-      <h2>6. Children</h2>
-      <p>The product is intended primarily for adults. Minors should use it with guardian guidance and consent where required.</p>
-
-      <h2>7. Contact and updates</h2>
-      <p>Contact the privacy email above for access, correction, deletion, or questions. Do not include a full API key or unnecessary recordings in your first message. We will update this page when practices change.</p>
-    </section>
-
-    <p class="note">本页面为便于 App Store / TestFlight 填写的公开说明，不构成法律意见。上线前请将邮箱与主体信息核对为实际运营信息，并由法务复核。</p>
   </main>
 </body>
 </html>
